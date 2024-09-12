@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins',sans-serif;
+}
+#navbar{
+    position: sticky;
+    top:0;
+    left:0;
+    z-index:100;
+    padding : .5rem 5rem;
+    box-shadow: 5px 5px 20px lightgray;
+    background:pink
+}
+.navbar .navbar-brand{
+    font-size:25px ;
+    font-weight: 700;
+    color:darkblue;
+}
+#navbarSupportedContent a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+#navbarSupportedContent a:hover {
+    border-bottom: 2px solid darkblue;
+    color: darkblue;
+}
+#navbarSupportedContent button{
+    background: darkblue;
+    width:5rem;
+    color: white;
+    border-radius: 15px;
+}
+section{
+    width: 100%;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+/**Home**/
+#home{
+    background-image:url(blur.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+#home h1{
+    font-size: 100px;
+    color: white;
+    letter-spacing: 3px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#home p{
+    font-size: 18px;
+    color:black;
+}
+#home .input-group{
+    width: 40%;
+    height: 40px;
+}
+.btn-signin{
+    background-color:darkblue !important;
+    color:cornsilk;
+    border-radius: 5px;
+}
+#about{
+    background: linear-gradient(to right, lightblue ,white 100%);
+}
+#about h2{
+    font-weight: 500;
+    font-size: 50px;
+}
+/***menu***/
+#menu{
+    background: palegoldenrod;
+}
+#menu h2{
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-weight:500;
+}
+#menu img{
+    width:250px;
+    height:300px;
+}
+.card {
+    width: 260px;
+    height: 300px;
+    background: palegoldenrod !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3), inset 4px 4px 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+    transition: .2s;
+}
+
+.card:hover {
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3), inset -4px -4px 10px white;
+    transition: .2s;
+}
+/***contact***/
+#contact img{
+    height: 100%;
+}
+.box{
+    width:80%;
+    
+    margin-top: 10px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+#contact input{
+    margin: 10px 0px;
+}
+#contact textarea{
+    margin: 10px 0px;
+}
